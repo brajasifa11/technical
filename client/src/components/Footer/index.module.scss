@@ -1,0 +1,44 @@
+@import "../../style/base";
+
+.container {
+  .wraper {
+    @include directionX;
+    justify-content: space-around;
+    .about {
+      @include directionY;
+      width: 30%;
+      .logo {
+        width: 100%;
+      }
+      p {
+        width: 95%;
+        margin-top: 6px;
+        color: $light-grey;
+      }
+    }
+    .contact {
+      margin-top: 27px;
+    }
+    .more {
+      text-align: left;
+      p {
+        border-bottom: 2px solid $shadow-grey;
+        cursor: pointer;
+      }
+    }
+    .socialmedia {
+      .group {
+        margin-top: 0px;
+        display: flex;
+        gap: 10px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .copyright {
+    width: 190px;
+    margin-bottom: 2%;
+  }
+}

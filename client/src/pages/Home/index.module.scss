@@ -1,0 +1,55 @@
+@import "../../style/base";
+
+.container {
+  width: 80%;
+  @include directionY;
+  @include content-center;
+  margin-top: 2%;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    button {
+      @include submain;
+      width: 260px;
+      height: 40px;
+      background-color: $light-blue-sky;
+      color: $white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .wraper {
+    box-shadow: 0px 4.98667px 19.9467px 4.98667px rgba(0, 0, 0, 0.4);
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-left: 30px;
+      text-align: left;
+    }
+    .displays {
+      width: 90%;
+      @include directionX;
+      @include content-center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      .card {
+        cursor: pointer;
+        display: flex;
+        @include content-center;
+        margin-bottom: 40px;
+        box-shadow: 0px 4.98667px 19.9467px 4.98667px rgba(0, 0, 0, 0.2);
+        img {
+          display: flex;
+          @include content-center;
+          max-width: 260px;
+        }
+      }
+    }
+  }
+  .footer {
+    margin-top: 4%;
+  }
+}

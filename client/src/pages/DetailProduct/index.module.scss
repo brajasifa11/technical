@@ -1,0 +1,45 @@
+@import "../../style/base";
+
+.container {
+  .wraper {
+    .content {
+      width: 76%;
+      @include directionX;
+      @include content-center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .product {
+        img {
+          width: 340px;
+        }
+      }
+      .description {
+        @include directionY;
+        flex-wrap: wrap;
+        margin-left: 2%;
+        .title {
+          color: $light-blue-sky;
+          font-size: 48px;
+        }
+      }
+      .subdescription {
+        text-align: justify;
+        font-size: 20px;
+      }
+      .response {
+        margin-top: 5%;
+        @include directionX;
+        @include content-center;
+        gap: 50px;
+        button {
+          width: 290px;
+          height: 40px;
+          color: $white;
+          background-color: $light-blue-sky;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../style/base";
+
+.container {
+  .wraper {
+    @include directionX;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .logo {
+      width: 24%;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  }
+  .border {
+    border: 2px solid $light-blue-sky;
+  }
+}

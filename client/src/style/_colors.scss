@@ -1,0 +1,36 @@
+/*
+ * Filename: _colors.scss
+ * Purpose: Includes a list of colors that should be used in the application.
+*/
+
+/**************** SASS VARIABLES ***********************/
+// Begin with simple, human-readable color names, which should be stable:
+// DON'T CONSUME THESE IN YOUR CODE!
+
+// Slightly lighten a color
+// @access public
+// @param {Color} $color - color to tint
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function tint($color, $percentage) {
+  @return mix(#fff, $color, $percentage);
+}
+
+// Slightly darken a color
+// @access public
+// @param {Color} $color - color to shade
+// @param {Number} $percentage - percentage of `$color` in returned color
+// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(#000, $color, $percentage);
+}
+
+// Primary colors
+$black: #000;
+$white: #fff;
+$light-blue-sky: #4ac4fa;
+$light-blue-sky50: rgba(74, 196, 250, 0.5);
+$light-blue-sky25: rgba(74, 196, 250, 0.25);
+$light-grey: #777777;
+$dark-shadwow-grey: #333333;
+$shadow-grey: #808080;
